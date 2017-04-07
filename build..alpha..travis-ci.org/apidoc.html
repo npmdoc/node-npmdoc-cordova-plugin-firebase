@@ -1,0 +1,908 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/arnesson/cordova-plugin-firebase#readme"
+
+    >cordova-plugin-firebase (v0.1.20)</a>
+</h1>
+<h4>Cordova plugin for Google Firebase</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cordova-plugin-firebase">module cordova-plugin-firebase</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cordova-plugin-firebase.</span>firebase_browser</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cordova-plugin-firebase.firebase_browser">module cordova-plugin-firebase.firebase_browser</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-firebase.firebase_browser.activateFetched">
+            function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>activateFetched
+            <span class="apidocSignatureSpan">(success, error)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-firebase.firebase_browser.fetch">
+            function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>fetch
+            <span class="apidocSignatureSpan">(cacheExpirationSeconds, success, error)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-firebase.firebase_browser.getBadgeNumber">
+            function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>getBadgeNumber
+            <span class="apidocSignatureSpan">(success, error)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-firebase.firebase_browser.getByteArray">
+            function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>getByteArray
+            <span class="apidocSignatureSpan">(key, namespace, success, error)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-firebase.firebase_browser.getInfo">
+            function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>getInfo
+            <span class="apidocSignatureSpan">(success, error)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-firebase.firebase_browser.getInstanceId">
+            function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>getInstanceId
+            <span class="apidocSignatureSpan">(success, error)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-firebase.firebase_browser.getToken">
+            function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>getToken
+            <span class="apidocSignatureSpan">(success, error)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-firebase.firebase_browser.getValue">
+            function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>getValue
+            <span class="apidocSignatureSpan">(key, namespace, success, error)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-firebase.firebase_browser.grantPermission">
+            function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>grantPermission
+            <span class="apidocSignatureSpan">(success, error)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-firebase.firebase_browser.logEvent">
+            function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>logEvent
+            <span class="apidocSignatureSpan">(name, params, success, error)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-firebase.firebase_browser.onNotificationOpen">
+            function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>onNotificationOpen
+            <span class="apidocSignatureSpan">(success, error)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-firebase.firebase_browser.onTokenRefresh">
+            function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>onTokenRefresh
+            <span class="apidocSignatureSpan">(success, error)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-firebase.firebase_browser.setBadgeNumber">
+            function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>setBadgeNumber
+            <span class="apidocSignatureSpan">(number, success, error)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-firebase.firebase_browser.setConfigSettings">
+            function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>setConfigSettings
+            <span class="apidocSignatureSpan">(settings, success, error)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-firebase.firebase_browser.setDefaults">
+            function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>setDefaults
+            <span class="apidocSignatureSpan">(defaults, namespace, success, error)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-firebase.firebase_browser.setScreenName">
+            function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>setScreenName
+            <span class="apidocSignatureSpan">(name, success, error)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-firebase.firebase_browser.setUserId">
+            function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>setUserId
+            <span class="apidocSignatureSpan">(id, success, error)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-firebase.firebase_browser.setUserProperty">
+            function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>setUserProperty
+            <span class="apidocSignatureSpan">(name, value, success, error)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-firebase.firebase_browser.subscribe">
+            function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>subscribe
+            <span class="apidocSignatureSpan">(topic, success, error)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-plugin-firebase.firebase_browser.unsubscribe">
+            function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>unsubscribe
+            <span class="apidocSignatureSpan">(topic, success, error)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cordova-plugin-firebase" id="apidoc.module.cordova-plugin-firebase">module cordova-plugin-firebase</a></h1>
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cordova-plugin-firebase.firebase_browser" id="apidoc.module.cordova-plugin-firebase.firebase_browser">module cordova-plugin-firebase.firebase_browser</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-firebase.firebase_browser.activateFetched" id="apidoc.element.cordova-plugin-firebase.firebase_browser.activateFetched">
+        function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>activateFetched
+        <span class="apidocSignatureSpan">(success, error)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">activateFetched = function (success, error) {
+    if (typeof success === &#x27;function&#x27;) {
+        success();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+window.FirebasePlugin.fetch(600);
+```
+
+### activateFetched
+
+Activate the Remote Config fetched config:
+```
+window.FirebasePlugin.<span class="apidocCodeKeywordSpan">activateFetched</span>(function(activated) {
+    // activated will be true if there was a fetched config activated,
+    // or false if no fetched config was found, or the fetched config was already activated.
+    console.log(activated);
+}, function(error) {
+    console.error(error);
+});
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-firebase.firebase_browser.fetch" id="apidoc.element.cordova-plugin-firebase.firebase_browser.fetch">
+        function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>fetch
+        <span class="apidocSignatureSpan">(cacheExpirationSeconds, success, error)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">fetch = function (cacheExpirationSeconds, success, error) {
+    if (typeof success === &#x27;function&#x27;) {
+        success();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+window.FirebasePlugin.setUserProperty(&#x22;name&#x22;, &#x22;value&#x22;);
+```
+
+### fetch
+
+Fetch Remote Config parameter values for your app:
+```
+window.FirebasePlugin.<span class="apidocCodeKeywordSpan">fetch</span>();
+// or, specify the cacheExpirationSeconds
+window.FirebasePlugin.fetch(600);
+```
+
+### activateFetched
+
+Activate the Remote Config fetched config:
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-firebase.firebase_browser.getBadgeNumber" id="apidoc.element.cordova-plugin-firebase.firebase_browser.getBadgeNumber">
+        function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>getBadgeNumber
+        <span class="apidocSignatureSpan">(success, error)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getBadgeNumber = function (success, error) {
+    if (typeof success === &#x27;function&#x27;) {
+        success();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+window.FirebasePlugin.setBadgeNumber(0);
+```
+
+### getBadgeNumber
+
+Get icon badge number:
+```
+window.FirebasePlugin.<span class="apidocCodeKeywordSpan">getBadgeNumber</span>(function(n) {
+    console.log(n);
+});
+```
+
+### subscribe
+
+Subscribe to a topic:
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-firebase.firebase_browser.getByteArray" id="apidoc.element.cordova-plugin-firebase.firebase_browser.getByteArray">
+        function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>getByteArray
+        <span class="apidocSignatureSpan">(key, namespace, success, error)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getByteArray = function (key, namespace, success, error) {
+    if (typeof success === &#x27;function&#x27;) {
+        success();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+});
+```
+
+### getByteArray (Android only)
+**NOTE: byte array is only available for SDK 19+**
+Retrieve a Remote Config byte array:
+```
+window.FirebasePlugin.<span class="apidocCodeKeywordSpan">getByteArray</span>(&#x22;key&#x22;, function(bytes) {
+    // a Base64 encoded string that represents the value for &#x22;key&#x22;
+    console.log(bytes.base64);
+    // a numeric array containing the values of the byte array (i.e. [0xFF, 0x00])
+    console.log(bytes.array);
+}, function(error) {
+    console.error(error);
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-firebase.firebase_browser.getInfo" id="apidoc.element.cordova-plugin-firebase.firebase_browser.getInfo">
+        function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>getInfo
+        <span class="apidocSignatureSpan">(success, error)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getInfo = function (success, error) {
+    if (typeof success === &#x27;function&#x27;) {
+        success();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+});
+```
+
+### getInfo (Android only)
+
+Get the current state of the FirebaseRemoteConfig singleton object:
+```
+window.FirebasePlugin.<span class="apidocCodeKeywordSpan">getInfo</span>(function(info) {
+    // the status of the developer mode setting (true/false)
+    console.log(info.configSettings.developerModeEnabled);
+    // the timestamp (milliseconds since epoch) of the last successful fetch
+    console.log(info.fetchTimeMillis);
+    // the status of the most recent fetch attempt (int)
+    console.log(info.lastFetchStatus);
+}, function(error) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-firebase.firebase_browser.getInstanceId" id="apidoc.element.cordova-plugin-firebase.firebase_browser.getInstanceId">
+        function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>getInstanceId
+        <span class="apidocSignatureSpan">(success, error)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getInstanceId = function (success, error) {
+    if (typeof success === &#x27;function&#x27;) {
+        success();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-firebase.firebase_browser.getToken" id="apidoc.element.cordova-plugin-firebase.firebase_browser.getToken">
+        function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>getToken
+        <span class="apidocSignatureSpan">(success, error)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getToken = function (success, error) {
+    if (typeof success === &#x27;function&#x27;) {
+        success();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+## Methods
+
+### getToken
+
+Get the device token (id):
+```
+window.FirebasePlugin.<span class="apidocCodeKeywordSpan">getToken</span>(function(token) {
+    // save this server-side and use it to push notifications to this device
+    console.log(token);
+}, function(error) {
+    console.error(error);
+});
+```
+Note that token will be null if it has not been established yet
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-firebase.firebase_browser.getValue" id="apidoc.element.cordova-plugin-firebase.firebase_browser.getValue">
+        function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>getValue
+        <span class="apidocSignatureSpan">(key, namespace, success, error)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getValue = function (key, namespace, success, error) {
+    if (typeof success === &#x27;function&#x27;) {
+        success();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+});
+```
+
+### getValue
+
+Retrieve a Remote Config value:
+```
+window.FirebasePlugin.<span class="apidocCodeKeywordSpan">getValue</span>(&#x22;key&#x22;, function(value) {
+console.log(value);
+}, function(error) {
+console.error(error);
+});
+// or, specify a namespace for the config value
+window.FirebasePlugin.getValue(&#x22;key&#x22;, &#x22;namespace&#x22;, function(value) {
+console.log(value);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-firebase.firebase_browser.grantPermission" id="apidoc.element.cordova-plugin-firebase.firebase_browser.grantPermission">
+        function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>grantPermission
+        <span class="apidocSignatureSpan">(success, error)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">grantPermission = function (success, error) {
+    if (typeof success === &#x27;function&#x27;) {
+        success();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+[Changing notification icon](#changing-notification-icon)
+
+### grantPermission (iOS only)
+
+Grant permission to recieve push notifications (will trigger prompt):
+```
+window.FirebasePlugin.<span class="apidocCodeKeywordSpan">grantPermission</span>();
+```
+### hasPermission
+
+Check permission to recieve push notifications:
+```
+window.FirebasePlugin.hasPermission(function(data){
+console.log(data.isEnabled);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-firebase.firebase_browser.logEvent" id="apidoc.element.cordova-plugin-firebase.firebase_browser.logEvent">
+        function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>logEvent
+        <span class="apidocSignatureSpan">(name, params, success, error)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">logEvent = function (name, params, success, error) {
+    if (typeof success === &#x27;function&#x27;) {
+        success();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+window.FirebasePlugin.unsubscribe(&#x22;example&#x22;);
+```
+
+### logEvent
+
+Log an event using Analytics:
+```
+window.FirebasePlugin.<span class="apidocCodeKeywordSpan">logEvent</span>(&#x22;select_content&#x22;, {content_type: &#x22;page_view
+&#x22;, item_id: &#x22;home&#x22;});
+```
+
+### setScreenName
+
+Set the name of the current screen in Analytics:
+```
+window.FirebasePlugin.setScreenName(&#x22;Home&#x22;);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-firebase.firebase_browser.onNotificationOpen" id="apidoc.element.cordova-plugin-firebase.firebase_browser.onNotificationOpen">
+        function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>onNotificationOpen
+        <span class="apidocSignatureSpan">(success, error)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onNotificationOpen = function (success, error) {
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+This is the best way to get a valid token for the device as soon as the token is established
+
+### onNotificationOpen
+
+Register notification callback:
+```
+window.FirebasePlugin.<span class="apidocCodeKeywordSpan">onNotificationOpen</span>(function(notification) {
+    console.log(notification);
+}, function(error) {
+    console.error(error);
+});
+```
+Notification flow:
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-firebase.firebase_browser.onTokenRefresh" id="apidoc.element.cordova-plugin-firebase.firebase_browser.onTokenRefresh">
+        function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>onTokenRefresh
+        <span class="apidocSignatureSpan">(success, error)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onTokenRefresh = function (success, error) {
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+Note that token will be null if it has not been established yet
+
+### onTokenRefresh
+
+Register for token changes:
+```
+window.FirebasePlugin.<span class="apidocCodeKeywordSpan">onTokenRefresh</span>(function(token) {
+    // save this server-side and use it to push notifications to this device
+    console.log(token);
+}, function(error) {
+    console.error(error);
+});
+```
+This is the best way to get a valid token for the device as soon as the token is established
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-firebase.firebase_browser.setBadgeNumber" id="apidoc.element.cordova-plugin-firebase.firebase_browser.setBadgeNumber">
+        function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>setBadgeNumber
+        <span class="apidocSignatureSpan">(number, success, error)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setBadgeNumber = function (number, success, error) {
+    if (typeof success === &#x27;function&#x27;) {
+        success();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+});
+```
+
+### setBadgeNumber
+
+Set a number on the icon badge:
+```
+window.FirebasePlugin.<span class="apidocCodeKeywordSpan">setBadgeNumber</span>(3);
+```
+
+Set 0 to clear the badge
+```
+window.FirebasePlugin.setBadgeNumber(0);
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-firebase.firebase_browser.setConfigSettings" id="apidoc.element.cordova-plugin-firebase.firebase_browser.setConfigSettings">
+        function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>setConfigSettings
+        <span class="apidocSignatureSpan">(settings, success, error)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setConfigSettings = function (settings, success, error) {
+    if (typeof success === &#x27;function&#x27;) {
+        success();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### setConfigSettings (Android only)
+
+Change the settings for the FirebaseRemoteConfig object&#x27;s operations:
+```
+var settings = {
+    developerModeEnabled: true
+}
+window.FirebasePlugin.<span class="apidocCodeKeywordSpan">setConfigSettings</span>(settings);
+```
+
+### setDefaults (Android only)
+
+Set defaults in the Remote Config:
+```
+// define defaults
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-firebase.firebase_browser.setDefaults" id="apidoc.element.cordova-plugin-firebase.firebase_browser.setDefaults">
+        function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>setDefaults
+        <span class="apidocSignatureSpan">(defaults, namespace, success, error)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setDefaults = function (defaults, namespace, success, error) {
+    if (typeof success === &#x27;function&#x27;) {
+        success();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    // map &#x22;mBase64&#x22; to a Remote Config byte array represented by a Base64 string
+    // Note: the Base64 string is in an array in order to differentiate from a string config value
+    mBase64: [&#x22;SGVsbG8gV29ybGQ=&#x22;],
+    // map &#x22;mBytes&#x22; to a Remote Config byte array represented by a numeric array
+    mBytes: [0xFF, 0x00]
+}
+// set defaults
+window.FirebasePlugin.<span class="apidocCodeKeywordSpan">setDefaults</span>(defaults);
+// or, specify a namespace
+window.FirebasePlugin.setDefaults(defaults, &#x22;namespace&#x22;);
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-firebase.firebase_browser.setScreenName" id="apidoc.element.cordova-plugin-firebase.firebase_browser.setScreenName">
+        function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>setScreenName
+        <span class="apidocSignatureSpan">(name, success, error)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setScreenName = function (name, success, error) {
+    if (typeof success === &#x27;function&#x27;) {
+        success();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+window.FirebasePlugin.logEvent(&#x22;select_content&#x22;, {content_type: &#x22;page_view&#x22;, item_id: &#x22;home&#x22;});
+```
+
+### setScreenName
+
+Set the name of the current screen in Analytics:
+```
+window.FirebasePlugin.<span class="apidocCodeKeywordSpan">setScreenName</span>(&#x22;Home&#x22;);
+```
+
+### setUserId
+
+Set a user id for use in Analytics:
+```
+window.FirebasePlugin.setUserId(&#x22;user_id&#x22;);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-firebase.firebase_browser.setUserId" id="apidoc.element.cordova-plugin-firebase.firebase_browser.setUserId">
+        function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>setUserId
+        <span class="apidocSignatureSpan">(id, success, error)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setUserId = function (id, success, error) {
+    if (typeof success === &#x27;function&#x27;) {
+        success();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+window.FirebasePlugin.setScreenName(&#x22;Home&#x22;);
+```
+
+### setUserId
+
+Set a user id for use in Analytics:
+```
+window.FirebasePlugin.<span class="apidocCodeKeywordSpan">setUserId</span>(&#x22;user_id&#x22;);
+```
+
+### setUserProperty
+
+Set a user property for use in Analytics:
+```
+window.FirebasePlugin.setUserProperty(&#x22;name&#x22;, &#x22;value&#x22;);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-firebase.firebase_browser.setUserProperty" id="apidoc.element.cordova-plugin-firebase.firebase_browser.setUserProperty">
+        function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>setUserProperty
+        <span class="apidocSignatureSpan">(name, value, success, error)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setUserProperty = function (name, value, success, error) {
+    if (typeof success === &#x27;function&#x27;) {
+        success();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+window.FirebasePlugin.setUserId(&#x22;user_id&#x22;);
+```
+
+### setUserProperty
+
+Set a user property for use in Analytics:
+```
+window.FirebasePlugin.<span class="apidocCodeKeywordSpan">setUserProperty</span>(&#x22;name&#x22;, &#x22;value&#x22;);
+```
+
+### fetch
+
+Fetch Remote Config parameter values for your app:
+```
+window.FirebasePlugin.fetch();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-firebase.firebase_browser.subscribe" id="apidoc.element.cordova-plugin-firebase.firebase_browser.subscribe">
+        function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>subscribe
+        <span class="apidocSignatureSpan">(topic, success, error)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">subscribe = function (topic, success, error) {
+    if (typeof success === &#x27;function&#x27;) {
+        success();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+});
+```
+
+### subscribe
+
+Subscribe to a topic:
+```
+window.FirebasePlugin.<span class="apidocCodeKeywordSpan">subscribe</span>(&#x22;example&#x22;);
+```
+
+### unsubscribe
+
+Unsubscribe from a topic:
+```
+window.FirebasePlugin.unsubscribe(&#x22;example&#x22;);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-plugin-firebase.firebase_browser.unsubscribe" id="apidoc.element.cordova-plugin-firebase.firebase_browser.unsubscribe">
+        function <span class="apidocSignatureSpan">cordova-plugin-firebase.firebase_browser.</span>unsubscribe
+        <span class="apidocSignatureSpan">(topic, success, error)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">unsubscribe = function (topic, success, error) {
+    if (typeof success === &#x27;function&#x27;) {
+        success();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+window.FirebasePlugin.subscribe(&#x22;example&#x22;);
+```
+
+### unsubscribe
+
+Unsubscribe from a topic:
+```
+window.FirebasePlugin.<span class="apidocCodeKeywordSpan">unsubscribe</span>(&#x22;example&#x22;);
+```
+
+### logEvent
+
+Log an event using Analytics:
+```
+window.FirebasePlugin.logEvent(&#x22;select_content&#x22;, {content_type: &#x22;page_view&#x22;, item_id: &#x22;home&#x22;});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
