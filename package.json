@@ -1,1 +1,38 @@
-{     "devDependencies": {         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmdoc-cordova-plugin-firebase",     "homepage": "https://github.com/npmdoc/node-npmdoc-cordova-plugin-firebase",     "repository": {         "type": "git",         "url": "https://github.com/npmdoc/node-npmdoc-cordova-plugin-firebase.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### api documentation for  cordova-plugin-firebase (v0.1.20)  [![npm package](https://img.shields.io/npm/v/npmdoc-cordova-plugin-firebase.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-cordova-plugin-firebase) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-cordova-plugin-firebase.svg)](https://travis-ci.org/npmdoc/node-npmdoc-cordova-plugin-firebase)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-cordova-plugin-firebase",
+    "keywords": [
+        "documentation",
+        "cordova-plugin-firebase"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_cordova_plugin_firebase.js",
+    "name": "npmdoc-cordova-plugin-firebase",
+    "nameAlias": "npmdoc_cordova_plugin_firebase",
+    "nameOriginal": "npmdoc-cordova-plugin-firebase",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-cordova-plugin-firebase.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "2017.4.23"
+}
